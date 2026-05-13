@@ -9,7 +9,7 @@ Landing page de [guillers.es](https://guillers.es): servicio de automatizaciones
 - Tipografías: Plus Jakarta Sans, DM Mono (Google Fonts)
 - Analytics: Google Analytics 4 cookieless
 - Formulario: webhook a n8n self-hosted
-- Deploy: Nginx + Let's Encrypt sobre VPS
+- Deploy: Easypanel (auto-deploy desde GitHub) + alternativa Nginx en VPS
 
 ## Estructura
 
@@ -65,7 +65,23 @@ Eventos custom trackados:
 
 ## Deploy
 
-Ver [`deploy/DEPLOY.md`](./deploy/DEPLOY.md) para los pasos completos. Resumen:
+### Easypanel (actual)
+
+Configurado como servicio tipo App con auto-deploy desde la rama `main`:
+
+- Repositorio: `guillesrl/autonomoia` · Rama `main`
+- Install Command: `npm install`
+- Build Command: `npm run build`
+- Start Command: `npm start` (ejecuta `serve -s dist -l $PORT`)
+- Node fijado a 20 vía `.nvmrc`
+
+Cada push a `main` dispara un build + redeploy automático.
+
+CORS del webhook de n8n: el nodo Webhook tiene configurado el origen `https://guillers.es` en "Allowed Origins (CORS)". En desarrollo local Vite hace de proxy para evitar CORS.
+
+### Alternativa: Nginx en VPS
+
+Ver [`deploy/DEPLOY.md`](./deploy/DEPLOY.md). Resumen:
 
 ```bash
 npm run build

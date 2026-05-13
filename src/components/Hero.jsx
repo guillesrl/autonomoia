@@ -111,37 +111,39 @@ function ChatPreview() {
     <div style={{ position: 'relative' }}>
       <div aria-hidden="true" style={{
         position: 'absolute', top: -30, right: -30, width: 200, height: 200,
-        background: 'var(--color-blue-100)', borderRadius: '50%',
-        filter: 'blur(40px)', opacity: 0.6, pointerEvents: 'none',
+        background: 'rgba(62,143,216,0.35)', borderRadius: '50%',
+        filter: 'blur(40px)', opacity: 0.8, pointerEvents: 'none',
       }} />
 
       <div style={{
         position: 'relative',
-        background: 'var(--bg-surface)',
-        border: '1px solid var(--border-default)',
+        background: 'rgba(15,24,42,0.72)',
+        backdropFilter: 'blur(18px) saturate(160%)',
+        WebkitBackdropFilter: 'blur(18px) saturate(160%)',
+        border: '1px solid rgba(255,255,255,0.10)',
         borderRadius: 20, padding: 24,
-        boxShadow: 'var(--shadow-xl)',
+        boxShadow: '0 30px 60px rgba(0,0,0,0.35), 0 8px 20px rgba(0,0,0,0.20)',
         maxWidth: 480, marginLeft: 'auto',
       }}>
         <div style={{
           display: 'flex', alignItems: 'center', gap: 12,
           paddingBottom: 16, marginBottom: 16,
-          borderBottom: '1px solid var(--border-subtle)',
+          borderBottom: '1px solid rgba(255,255,255,0.08)',
         }}>
           <div style={{
             width: 40, height: 40, borderRadius: 12,
-            background: 'var(--color-slate-950)',
+            background: 'rgba(255,255,255,0.10)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             color: 'white', fontWeight: 700, fontSize: 16,
           }}>AI</div>
           <div style={{ flex: 1 }}>
-            <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--fg-primary)' }}>Asistente Autonomo IA</div>
-            <div style={{ fontSize: 12, color: 'var(--fg-tertiary)', display: 'flex', alignItems: 'center', gap: 5, marginTop: 2 }}>
+            <div style={{ fontSize: 14, fontWeight: 600, color: 'white' }}>Asistente Autonomo IA</div>
+            <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.55)', display: 'flex', alignItems: 'center', gap: 5, marginTop: 2 }}>
               <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--color-success)' }}></span>
               Activo · Responde en &lt; 1s
             </div>
           </div>
-          <div style={{ fontSize: 11, color: 'var(--fg-muted)', fontFamily: 'var(--font-mono)' }}>WhatsApp</div>
+          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-mono)' }}>WhatsApp</div>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, height: 360, overflow: 'hidden' }}>
@@ -155,15 +157,15 @@ function ChatPreview() {
                 maxWidth: '80%',
                 padding: '10px 14px',
                 borderRadius: m.from === 'user' ? '14px 14px 4px 14px' : '14px 14px 14px 4px',
-                background: m.from === 'user' ? 'var(--color-blue-600)' : 'var(--bg-elevated)',
-                color: m.from === 'user' ? 'white' : 'var(--fg-primary)',
+                background: m.from === 'user' ? 'var(--color-blue-600)' : 'rgba(255,255,255,0.07)',
+                color: 'white',
                 fontSize: 14, lineHeight: 1.45,
-                border: m.from === 'user' ? 'none' : '1px solid var(--border-subtle)',
+                border: m.from === 'user' ? 'none' : '1px solid rgba(255,255,255,0.08)',
               }}>
                 {m.text}
                 <div style={{
                   fontSize: 10, marginTop: 4,
-                  color: m.from === 'user' ? 'rgba(255,255,255,0.7)' : 'var(--fg-muted)',
+                  color: m.from === 'user' ? 'rgba(255,255,255,0.7)' : 'rgba(255,255,255,0.45)',
                   textAlign: 'right',
                 }}>{m.time}</div>
               </div>
@@ -173,13 +175,13 @@ function ChatPreview() {
             <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
               <div style={{
                 padding: '12px 14px', borderRadius: '14px 14px 14px 4px',
-                background: 'var(--bg-elevated)', border: '1px solid var(--border-subtle)',
+                background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.08)',
                 display: 'flex', gap: 4,
               }}>
                 {[0, 1, 2].map(i => (
                   <span key={i} style={{
                     width: 6, height: 6, borderRadius: '50%',
-                    background: 'var(--fg-muted)',
+                    background: 'rgba(255,255,255,0.45)',
                     animation: `bounce 1.2s ease-in-out ${i * 0.15}s infinite`,
                   }} />
                 ))}

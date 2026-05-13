@@ -1,0 +1,48 @@
+# Autonomo IA
+
+> Diseño, despliegue y soporte de automatizaciones con IA a medida para pequeñas y medianas empresas. Asistentes conversacionales por WhatsApp integrados con CRM, calendario y herramientas existentes. Configuración en 48 horas. Sede en Andorra, atiende España y resto de Europa.
+
+## Qué hacemos
+
+Automatizamos la atención al cliente de negocios usando agentes de IA conversacionales. El asistente responde mensajes, califica leads, agenda citas y gestiona reservas 24/7 sin intervención humana. No vendemos software cerrado: cada sistema se diseña a medida para los procesos del negocio.
+
+## Sectores donde tenemos casos reales
+
+- Inmobiliarias: filtrado de prospectos por presupuesto, zona y tipo de propiedad. Agendado automático de visitas. Aumento medio del 120% en leads cualificados.
+- Estética y peluquería: recordatorios automáticos por WhatsApp, gestión de reprogramaciones y confirmaciones. Reducción del 90% en citas no atendidas (no-shows).
+- Restaurantes y cafeterías: gestión de reservas de mesa, consultas sobre carta y horarios, disponibilidad 24/7.
+
+## Cómo trabajamos
+
+1. Auditoría gratuita de 30 minutos: analizamos procesos actuales e identificamos oportunidades con mayor retorno.
+2. Sistema a medida: diseñamos y configuramos el asistente IA integrándolo con CRM, agenda, WhatsApp y herramientas existentes.
+3. Puesta en marcha: lanzamos el sistema, formamos al equipo y damos soporte directo durante los primeros 30 días.
+
+## Integraciones soportadas
+
+WhatsApp Business API, Google Calendar, Calendly, Outlook, Stripe, n8n, Make, HubSpot, Notion, y prácticamente cualquier herramienta con API pública.
+
+## Precio y modelo de contratación
+
+Propuesta cerrada con precio fijo tras la auditoría gratuita. No hay cargos por uso ni sorpresas. No hay contratos de permanencia. Al finalizar entregamos toda la documentación y los flujos para que el cliente o cualquier desarrollador pueda mantener el sistema (sin vendor lock-in).
+
+## Métricas declaradas
+
+- +120% aumento medio en leads cualificados
+- −90% reducción de citas no atendidas
+- 48 horas desde firma hasta puesta en marcha
+- < 1 segundo de tiempo medio de respuesta del asistente IA
+
+## Contacto
+
+- Email: guillesrl@gmail.com
+- Teléfono / WhatsApp: +376 615 808
+- Web: https://guillers.es
+- Ubicación: Andorra
+
+## Recursos
+
+- [Landing principal](https://guillers.es/)
+- [Cómo funciona](https://guillers.es/#como-funciona)
+- [Formulario de auditoría gratuita](https://guillers.es/#contacto)
+- [Sitemap](https://guillers.es/sitemap.xml)

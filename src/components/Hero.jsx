@@ -123,7 +123,7 @@ function ChatPreview() {
         border: '1px solid rgba(255,255,255,0.10)',
         borderRadius: 20, padding: 24,
         boxShadow: '0 30px 60px rgba(0,0,0,0.35), 0 8px 20px rgba(0,0,0,0.20)',
-        maxWidth: 480, marginLeft: 'auto',
+        maxWidth: 480, margin: '0 auto',
       }}>
         <div style={{
           display: 'flex', alignItems: 'center', gap: 12,

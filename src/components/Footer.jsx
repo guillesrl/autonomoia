@@ -35,10 +35,7 @@ export function Footer() {
       paddingInline: 'var(--container-pad)',
     }}>
       <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto' }}>
-        <div data-grid-2 style={{
-          display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr',
-          gap: 32, marginBottom: 40,
-        }}>
+        <div className="footer-grid" style={{ marginBottom: 40 }}>
           <div style={{ maxWidth: 320 }}>
             <Logo />
             <p style={{ fontSize: 14, color: 'var(--fg-secondary)', lineHeight: 1.6, marginTop: 12 }}>
@@ -46,25 +43,26 @@ export function Footer() {
               Diseño, despliegue y soporte continuo.
             </p>
           </div>
-          <div>
-            <div style={{
-              fontSize: 12, fontWeight: 600, letterSpacing: '0.12em',
-              textTransform: 'uppercase', color: 'var(--fg-tertiary)', marginBottom: 16,
-            }}>Contacto</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <a href="tel:+376615808" style={footerLink}>+376 615 808</a>
-              <a href="mailto:guillesrl@gmail.com" style={footerLink}>guillesrl@gmail.com</a>
+          <div className="footer-links-row">
+            <div>
+              <div style={{
+                fontSize: 12, fontWeight: 600, letterSpacing: '0.12em',
+                textTransform: 'uppercase', color: 'var(--fg-tertiary)', marginBottom: 16,
+              }}>Contacto</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                <a href="tel:+376615808" style={footerLink}>+376 615 808</a>
+                <a href="mailto:guillesrl@gmail.com" style={footerLink}>guillesrl@gmail.com</a>
+              </div>
             </div>
-          </div>
-          <div>
-            <div style={{
-              fontSize: 12, fontWeight: 600, letterSpacing: '0.12em',
-              textTransform: 'uppercase', color: 'var(--fg-tertiary)', marginBottom: 16,
-            }}>Legal</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <a href="#" style={footerLink}>Aviso legal</a>
-              <a href="#" style={footerLink}>Privacidad</a>
-              <a href="#" style={footerLink}>Cookies</a>
+            <div>
+              <div style={{
+                fontSize: 12, fontWeight: 600, letterSpacing: '0.12em',
+                textTransform: 'uppercase', color: 'var(--fg-tertiary)', marginBottom: 16,
+              }}>Legal</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                <a href="#" style={footerLink}>Aviso legal</a>
+                <a href="#" style={footerLink}>Privacidad</a>
+              </div>
             </div>
           </div>
         </div>

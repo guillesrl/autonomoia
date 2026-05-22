@@ -80,6 +80,9 @@ body {
 .hero-ctas a { flex: 0 0 auto; justify-content: center; }
 .hero-ctas { justify-content: center; }
 
+.footer-grid { display: grid; grid-template-columns: 1fr; gap: 32px; }
+.footer-links-row { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+
 section { padding-inline: 20px; }
 [data-grid-2] { grid-template-columns: 1fr !important; }
 nav { padding: 12px 20px !important; }
@@ -97,6 +100,9 @@ nav a[href="#como-funciona"] { display: none; }
 }
 
 @media (min-width: 960px) {
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+  .footer-links-row { display: contents; }
+
   :root { --container-pad: 32px; --space-20: 80px; --space-24: 96px; }
   .hero-section { padding: 140px 32px 100px !important; }
   .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; }
